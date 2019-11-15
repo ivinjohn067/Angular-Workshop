@@ -8,5 +8,7 @@ if (environment.production) {
   enableProdMode();
 }
 
+// main.ts is the first class that will be executed when you run an angular application
+// bootstrapModule(AppModule) will initialize the app.module.ts file
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

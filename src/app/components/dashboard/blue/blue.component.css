@@ -1,0 +1,10 @@
+.board{
+    min-height: 100px;
+    background-color: #18aeda;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.board a{
+    color: white;
+}

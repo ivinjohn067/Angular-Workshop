@@ -1,10 +1,26 @@
-import { Component } from '@angular/core';
+// This area converts a TypeScript class to Angular component
+import { Component, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // Slectors are used to render a component to different locations
+  // 'app-root' - <app-root></app-root>
+  // '.app-root' - <div class="app-root"></div>
+  // '[app-root]' - <div app-root></div>
+  selector: 'app-root, .app-root, [app-root]', // We can also specify multiple selectors for one component
+  templateUrl: './app.component.html'
 })
+// End: This area converts a TypeScript class to Angular component
+
+// TypeScript class
 export class AppComponent {
-  title = 'WorkshopApp1';
+  public title: string;
+
+  constructor() {
+    this.title = 'Angular Workshop';
+  }
+
+  // This method will be executed once emitted from child
+  public recievedValue(value: string) {
+    alert('Value recieved from child is ' + value);
+  }
 }

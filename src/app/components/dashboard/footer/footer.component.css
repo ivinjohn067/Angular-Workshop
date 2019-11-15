@@ -1,0 +1,14 @@
+  footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    background: #1976d2;
+    padding: 5px;
+    z-index: 1111;
+  }
+  footer a {
+    color: #FFF;
+  }
